@@ -1,0 +1,37 @@
+name: Meeting Minutes Form
+description: Create meeting minutes
+title: "[✒️ Meeting]: "
+labels: ["meeting"]
+body:
+- type: input
+  id: attendees
+  attributes:
+    label: Attendees
+    description: Who's attending the meeting?
+    placeholder: "@..."
+  validations:
+    required: true    
+- type: input
+  id: topic
+  attributes:
+    label: Topic
+    description: What's the meeting about?
+  validations:
+    required: true  
+- type: input
+  id: date
+  attributes:
+    label: Date
+    description: Date of the meeting?
+  validations:
+    required: true 
+- type: textarea
+  id: agenda
+  attributes:
+    label: Agenda
+    description: What needs to be discussed? What actions are taken and by whom?
+    placeholder: |
+      1. ... @...
+      2. ... @...
+  validations:
+    required: true

@@ -1,0 +1,32 @@
+name: Feature Request [Story] Form
+description: Suggest an idea for this project
+title: "[📜 Story]: "
+labels: ["scrum: stories", "triage"]
+assignees:
+  - jstiefel
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A user story is an informal, general explanation of a software feature written from the perspective of the end user. Its purpose is to articulate how a software feature will provide value to the customer.
+        It usually takes 1-2 weeks to implement.
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What is the end goal for the user?
+      description: Informal, general explanation of a software feature written from the perspective of the end user or customer.
+      placeholder: How will the particular piece of work deliver value back to the user?
+      value: "As a [persona], I [want to], [so that]."
+    validations:
+      required: true
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Task Breakdown
+      description: Necessary tasks to implement the user story once they're created
+      value: |
+        Task Link 1
+        Task Link 2
+      placeholder: Link task issues!
+    validations:
+      required: false

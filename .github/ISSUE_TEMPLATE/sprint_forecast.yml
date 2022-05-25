@@ -1,0 +1,49 @@
+name: Sprint Forecast Form
+description: Plan a sprint
+title: "[😱 Scrum]: Sprint ✏️"
+labels: ["scrum"]
+body:
+- type: input
+  id: goal
+  attributes:
+    label: Sprint Goal
+    description: What is the overall goal of this sprint?
+    placeholder: Content Migration
+  validations:
+    required: true
+- type: input
+  id: duration
+  attributes:
+    label: Sprint Duration
+    description: How long is the sprint?
+    placeholder: 2 weeks
+  validations:
+    required: true
+- type: input
+  id: review
+  attributes:
+    label: Sprint Review Meeting
+    description: Date of the sprint review meeting
+    placeholder: xx.xx.2022 13:30
+  validations:
+    required: true
+- type: input
+  id: attendees
+  attributes:
+    label: Attendees
+    description: Who's attending the sprint meeting?
+    placeholder: "@..."
+  validations:
+    required: true
+- type: textarea
+  id: deliverables
+  attributes:
+    label: Deliverables
+    description: Which tasks from the backlog are part of this sprint?
+    placeholder: Link task issues here
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: |
+      As per our Sprint Planning Meeting you have agreed to the following Product Backlog Items (PBIs) being included in the current sprint backlog. The team will do its best to deliver this set of features (Scope), to a defined quality standard (Definition of Done) by the end of the sprint. Ideally the team will deliver what they forecast, or even a bit more, but this can't be guaranteed.

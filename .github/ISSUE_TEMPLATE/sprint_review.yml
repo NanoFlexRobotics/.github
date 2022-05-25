@@ -1,0 +1,30 @@
+name: Sprint Review Form
+description: Review a sprint
+title: "[😱 Scrum]: Sprint Review ✏️"
+labels: ["scrum"]
+body:
+- type: input
+  id: attendees
+  attributes:
+    label: Attendees
+    description: Who's attending the sprint meeting?
+    placeholder: "@..."
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: |
+      Check delivered and remaining work together in Scrum board.
+- type: textarea
+  id: retrospective
+  attributes:
+    label: Sprint Retrospective
+    description: As part of our commitment to inspect and adapt as a team we conduct a Sprint Retrospective at the end of every Sprint. Here are the results of our Sprint Retrospective.
+    value: |
+      **What went well?** ✏️
+      
+      **What didn't go so well?** ✏️
+      
+      **What improvements will be made for the next sprint?** ✏️
+  validations:
+    required: true

@@ -1,0 +1,32 @@
+name: Create Epic Form
+description: Create an epic
+title: "[💥 Epic]: "
+labels: ["scrum: epic", "triage"]
+assignees:
+  - jstiefel
+body:
+  - type: markdown
+    attributes:
+      value: |
+        An epic is a large body of work that can be broken down into a number of smaller stories. It can encompass multiple teams, projects and boards.
+        It usually takes 3 months to implement. Epics are most likely not only related to software.
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What is the body of work?
+      description: Epics describe the context for the user stories. 
+      placeholder: What is the top-tier of the work hierarchy?
+      value: "March 2050 Rocket Launch"
+    validations:
+      required: true
+  - type: textarea
+    id: stories
+    attributes:
+      label: Story Breakdown
+      description: Necessary stories to implement the epic once they're created
+      value: |
+        Story Link 1
+        Story Link 2
+      placeholder: Link task issues!
+    validations:
+      required: false

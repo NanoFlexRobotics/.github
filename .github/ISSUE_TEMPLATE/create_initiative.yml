@@ -1,0 +1,32 @@
+name: Create Initiative Form
+description: Create an initiative
+title: "[🚩 Initiative]: "
+labels: ["scrum: initiative", "triage"]
+assignees:
+  - jstiefel
+body:
+  - type: markdown
+    attributes:
+      value: |
+        An initiative describes the product roadmap at the highest level and is a collection of epics
+        It usually takes a year to implement. Initiatives are not only related to software and defined by the management.
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Initiative
+      description: What is the strategic effort that will help us to achieve our goals? 
+      placeholder: What is your initiative?
+      value: "Revolutionize neurovascular procedures"
+    validations:
+      required: true
+  - type: textarea
+    id: epics
+    attributes:
+      label: Epic Breakdown
+      description: Necessary epics to implement the initiative once they're created
+      value: |
+        Epic Link 1
+        Epic Link 2
+      placeholder: Link epic issues!
+    validations:
+      required: false
